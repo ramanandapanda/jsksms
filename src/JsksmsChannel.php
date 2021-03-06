@@ -1,9 +1,9 @@
 <?php
 
-namespace NotificationChannels\jsksms;
+namespace RamanandaPanda\Jsksms;
 
 use Illuminate\Notifications\Notification;
-use NotificationChannels\jsksms\Exceptions\CouldNotSendNotification;
+use RamanandaPanda\Jsksms\Exceptions\CouldNotSendNotification;
 
 class JsksmsChannel
 {

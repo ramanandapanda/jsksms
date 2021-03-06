@@ -1,6 +1,6 @@
 <?php
 
-namespace NotificationChannels\jsksms\Exceptions;
+namespace RamanandaPanda\Jsksms\Exceptions;
 
 use Exception;
 use GuzzleHttp\Exception\ClientException;

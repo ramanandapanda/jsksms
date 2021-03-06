@@ -1,6 +1,6 @@
 <?php
 
-namespace NotificationChannels\jsksms;
+namespace RamanandaPanda\Jsksms;
 
 use GuzzleHttp\Client as HttpClient;
 use Illuminate\Notifications\ChannelManager;
