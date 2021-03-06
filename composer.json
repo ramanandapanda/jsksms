@@ -1,6 +1,6 @@
 {
     "name": "ramanandapanda/jsksms",
-    "description": "Boilerplate package for creating other packages.",
+    "description": "SMS notification channel JSKSMS",
     "keywords": [
         "template",
         "composer",
