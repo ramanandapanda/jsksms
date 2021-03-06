@@ -1,6 +1,6 @@
 <?php
 
-namespace NotificationChannels\jsksms;
+namespace RamanandaPanda\Jsksms;
 
 class JsksmsMessage
 {

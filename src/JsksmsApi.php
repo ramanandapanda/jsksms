@@ -1,14 +1,12 @@
 <?php
 
-namespace NotificationChannels\jsksms;
+namespace RamanandaPanda\Jsksms;
 
 use DomainException;
 use Exception;
 use GuzzleHttp\Client as HttpClient;
 use GuzzleHttp\Exception\ClientException;
-use GuzzleHttp\Exception\GuzzleException;
-use Illuminate\Support\Arr;
-use NotificationChannels\jsksms\Exceptions\CouldNotSendNotification;
+use RamanandaPanda\Jsksms\Exceptions\CouldNotSendNotification;
 
 class JsksmsApi
 {
