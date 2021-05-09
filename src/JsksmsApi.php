@@ -34,7 +34,7 @@ class JsksmsApi
     {
         $this->client = $httpClient;
 
-        $this->endpoint = config('services.jsksms.endpoint', 'http://jskbulkmarketing.in/app/smsapi/index.php');
+        $this->endpoint = config('services.jsksms.endpoint');
         $this->params = config('services.jsksms');
     }
 
@@ -60,28 +60,15 @@ class JsksmsApi
     public function send($message = "", $to = '')
     {
         try {
-            // $response = $this->client->request('POST', $this->endpoint, [
-            //     'headers' => [
-            //         'Authorization' => "Bearer {$this->token}",
-            //     ],
-            //     'json' => [
-            //         'sender' => Arr::get($message, 'sender'),
-            //         'to' => Arr::get($message, 'to'),
-            //         'message' => Arr::get($message, 'message'),
-            //         'test' => Arr::get($message, 'test', false),
-            //     ],
-            // ]);
-
             $params = [
                 'msg' => $message,
                 'contacts' => $to
             ];
             $params = array_merge($params, $this->params);
-            $response =  $this->client->request('GET', $this->endpoint, [
+            $res =  $this->client->request('GET', $this->endpoint, [
                 'query' => $params
             ]);
-            $response = json_decode((string) $response->getBody(), true);
-
+            $response = json_decode((string) $res->getBody(), true);
             if (isset($response['error'])) {
                 throw new DomainException($response['error'], $response['error_code']);
             }
