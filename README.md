@@ -103,7 +103,7 @@ $ composer test
 
 ## Security
 
-If you discover any security related issues, please email amigo.k8@gmail.com instead of using the issue tracker.
+If you discover any security related issues, please use the issue tracker.
 
 ## Contributing
 
